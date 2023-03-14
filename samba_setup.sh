@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install samba samba-common-bin
+sudo apt install samba samba-common-bin -y
 sudo sed -i '/\[global\].*/a \ \ \ netbios name = RetroPie' /etc/samba/smb.conf
 sudo sh -c 'echo "
 [roms]
